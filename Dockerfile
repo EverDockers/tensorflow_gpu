@@ -1,11 +1,17 @@
 FROM nvidia/cuda:8.0-cudnn6-runtime-ubuntu16.04
 MAINTAINER Baker Wang <baikangwang@hotmail.com>
 
-#usage: docker run -it -v notebooks:/notebooks -p 6006:6006 baikangwang/tensorflow_cpu:tfonly
+#usage: docker run -it -v projects:/projects -p 6006:6006 baikangwang/tensorflow_gpu:tfonly
 RUN apt update && \
     apt install -y --no-install-recommends apt-utils \
     # Developer Essentials
-    git curl vim unzip wget
+    git curl vim unzip wget && \
+    #
+    # Cleanup
+    #
+    apt clean && \
+    apt autoremove && \
+    rm -rf /var/lib/apt/lists/*
 #
 # Python 3.5
 #
