@@ -35,7 +35,7 @@ RUN apt update && \
 #
 RUN CUDA_HOME=/usr/local/nvidia && \
     export CUDA_HOME && \
-    pip3 install --no-cache-dir --upgrade tensorflow-gpu && \
+    pip3 install --no-cache-dir --upgrade tensorflow-gpu
 
 #
 # Specify working folder
