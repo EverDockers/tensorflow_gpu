@@ -11,7 +11,7 @@ RUN apt update && \
 #
 # For convenience, alisas (but don't sym-link) python & pip to python3 & pip3 as recommended in:
 # http://askubuntu.com/questions/351318/changing-symlink-python-to-python3-causes-problems
-RUN python3.5 python3.5-dev python3-pip && \
+RUN apt install -y --no-install-recommends python3.5 python3.5-dev python3-pip && \
     pip3 install --no-cache-dir --upgrade pip setuptools && \
     echo "alias python='python3'" >> /root/.bash_aliases && \
     echo "alias pip='pip3'" >> /root/.bash_aliases && \
@@ -20,7 +20,7 @@ RUN python3.5 python3.5-dev python3-pip && \
     #
     apt clean && \
     apt autoremove && \
-    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /var/lib/apt/lists/*
 
 #
 # Tensorflow 1.3.0 - GPU
