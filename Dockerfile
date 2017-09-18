@@ -43,7 +43,7 @@ RUN pip3 --no-cache-dir install Pillow \
     # install javascript and css files
     jupyter contrib nbextension install --user && \
     # enable code prettifier
-    jupyter nbextension enable code_prettify/code_prettify && \
+    jupyter nbextension enable code_prettify/code_prettify
 
 
 EXPOSE 8888
