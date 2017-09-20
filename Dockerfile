@@ -1,9 +1,9 @@
 FROM nvidia/cuda:8.0-cudnn6-runtime-ubuntu16.04
 MAINTAINER Baker Wang <baikangwang@hotmail.com>
 
-ENV CUDA_HOME /usr/local/nvidia/
+ENV CUDA_HOME /usr/local/cuda/
 # For CUDA profiling, TensorFlow requires CUPTI.
-ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH /usr/local/cuda/lib64
 
 #usage: docker run -it -v projects:/projects -p 6006:6006 baikangwang/tensorflow_gpu:tfonly
 RUN apt update && \
