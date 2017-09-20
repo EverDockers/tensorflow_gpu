@@ -1,2 +1,10 @@
 # tensorflow_gpu
-Build based on nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+
+Build based on nvidia/cuda:latest
+
+* nvidia-docker: 1.0
+* cuda: 8.0.61
+* cudnn: 6.0.21
+* tensorflow: 1.3.0
+* python: 3.5
+
