@@ -1,4 +1,4 @@
-FROM baikangwang/tensorflow_gpu:tfonly2
+FROM baikangwang/tensorflow_gpu:tfonly_py2
 MAINTAINER Baker Wang <baikangwang@hotmail.com>
 
 #usage: docker run -it -v projects:/projects -p 8888:8888 -p 6006:6006 baikangwang/tensorflow_gpu:jupyter2
