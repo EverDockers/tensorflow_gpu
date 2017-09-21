@@ -1,11 +1,18 @@
 # tensorflow (gpu)
 
-baikangwang/tensorflow_gpu
+repository: 
 
-> [tfonly,latest](#tfonly-latest)  
-> [jupyter](#jupyter)
+[`baikangwang/tensorflow_gpu`](https://hub.docker.com/r/baikangwang/tensorflow_gpu/)
 
-## tfonly, latest
+tags:
+> [`tfonly`,`latest`](#tfonly-latest)  
+> [`jupyter`](#jupyter)
+
+## `tfonly`, `latest`
+
+### Description
+this image is built based on nvidia/cuda:8.0-devel-ubuntu16.04 and provides fundamental developing environment of 
+machine learning, `python`+`tensorflow`
 
 ### Docker Pull
 
@@ -23,10 +30,6 @@ nvidia-docker run -it --name <container name> -v <local working dir>:/projects -
 
 <https://github.com/EverDockers/tensorflow_gpu/blob/tfonly/Dockerfile>
 
-### Description
-this image is built based on nvidia/cuda:8.0-devel-ubuntu16.04 and provides fundamental developing environment of 
-machine learning, `python`+`tensorflow`
-
 ### Component
 
 * nvidia-docker: 1.0
@@ -35,7 +38,11 @@ machine learning, `python`+`tensorflow`
 * tensorflow: 1.3.0
 * python: 3.5
 
-## jupyter
+## `jupyter`
+
+### Description
+this image is built based on baikangwang/tensorflow_gpu:tfonly and provides python development environment,
+`python`+`tensorflow`+`jupyter`
 
 ### Docker Pull
 
@@ -56,10 +63,6 @@ the container, `/run_jupyter.sh --allow-root`
 ### Dockerfile
 
 <https://github.com/EverDockers/tensorflow_gpu/blob/jupyter/Dockerfile>
-
-### Description
-this image is built based on baikangwang/tensorflow_gpu:tfonly and provides python development environment,
-`python`+`tensorflow`+`jupyter`
 
 ### Component
 
