@@ -33,7 +33,7 @@ RUN apt update && \
 # Python 2.7
 #
 RUN apt update && \
-    apt install -y --no-install-recommends python python-dev python-pip && \
+    apt install -y --no-install-recommends python2.7 python-dev python-pip && \
     pip install --no-cache-dir --upgrade pip setuptools && \
     #
     # Cleanup
