@@ -6,7 +6,6 @@
       ![Docker Stars](https://img.shields.io/docker/stars/baikangwang/tensorflow_gpu.svg)
       ![Docker Pulls](https://img.shields.io/docker/pulls/baikangwang/tensorflow_gpu.svg)
       ![Docker Build Statu](https://img.shields.io/docker/build/baikangwang/tensorflow_gpu.svg)
-
 * tags
     * [`tfonly`,`latest`](#tfonly-latest)  
     * [`tfonly_py2`](#tfonly_py2)  
