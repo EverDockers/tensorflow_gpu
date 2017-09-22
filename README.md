@@ -1,12 +1,15 @@
-# Tensorflow (gpu)
+# Tensorflow (gpu) 
+
+
 
 * repository
     * [`baikangwang/tensorflow_gpu`](https://hub.docker.com/r/baikangwang/tensorflow_gpu/)
+      [![Docker Automated buil](https://img.shields.io/docker/automated/baikangwang/tensorflow_gpu.svg)]() [![Docker Stars](https://img.shields.io/docker/stars/baikangwang/tensorflow_gpu.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/baikangwang/tensorflow_gpu.svg)]()
 * tags
-    * [`tfonly`,`latest`](#tfonly-latest)
-    * [`tfonly_py2`](#tfonly_py2)
-    * [`jupyter`](#jupyter)
-    * [`jupyter_py2`](#jupyter_py2)
+    * [`tfonly`,`latest`](#tfonly-latest) [![Docker Build Statu](https://img.shields.io/docker/build/baikangwang/tensorflow_gpu.svg?tag=tfonly)]()
+    * [`tfonly_py2`](#tfonly_py2) [![Docker Build Statu](https://img.shields.io/docker/build/baikangwang/tensorflow_gpu.svg?tag=tfonly_py2)]()
+    * [`jupyter`](#jupyter) [![Docker Build Statu](https://img.shields.io/docker/build/baikangwang/tensorflow_gpu.svg?tag=jupyter)]()
+    * [`jupyter_py2`](#jupyter_py2) [![Docker Build Statu](https://img.shields.io/docker/build/baikangwang/tensorflow_gpu.svg?tag=jupyter_py2)]()
 
 ## `tfonly`, `latest`
 
