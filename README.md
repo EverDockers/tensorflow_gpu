@@ -4,9 +4,9 @@
     * [`baikangwang/tensorflow_gpu`](https://hub.docker.com/r/baikangwang/tensorflow_gpu/)
 * tags
     * [`tfonly`,`latest`](#tfonly-latest)
-    * [`tfonly2`](#tfonly2)
+    * [`tfonly_py2`](#tfonly_py2)
     * [`jupyter`](#jupyter)
-    * [`jupyter2`](#jupyter2)
+    * [`jupyter_py2`](#jupyter_py2)
 
 ## `tfonly`, `latest`
 
@@ -33,7 +33,7 @@ nvidia-docker run -it --name <container name> -v <local working dir>:/projects -
 * tensorflow: 1.3.0
 * python: 3.5
 
-## `tfonly2`
+## `tfonly_py2`
 
 ### Description
 
@@ -41,13 +41,13 @@ provides fundamental developing environment of machine learning with __python 2.
 
 |Docker||
 |:---|:---|
-|__Docker Pull__|`docker pull baikangwang/tensorflow_gpu:tfonly2`|
+|__Docker Pull__|`docker pull baikangwang/tensorflow_gpu:tfonly_py2`|
 |__Dockerfile__|<https://github.com/EverDockers/tensorflow_gpu/blob/tfonly2/Dockerfile>|
 
 ### Usage
 
 ```bash
-nvidia-docker run -it --name <container name> -v <local working dir>:/projects -p <host port>:6006 baikangwang/tensorflow_gpu:tfonly2 [/bin/bash] 
+nvidia-docker run -it --name <container name> -v <local working dir>:/projects -p <host port>:6006 baikangwang/tensorflow_gpu:tfonly_py2 [/bin/bash] 
 ```
 
 ### Components
@@ -89,22 +89,22 @@ the container, `/run_jupyter.sh --allow-root`
 * python: 3.5
 * jupyter
 
-## `jupyter2`
+## `jupyter_py2`
 
 ### Description
 
-based on baikangwang/tensorflow_gpu:tfonly2 and provides __python 2.7__ development environment,
+based on baikangwang/tensorflow_gpu:tfonly_py2 and provides __python 2.7__ development environment,
 `python`+`tensorflow`+`jupyter`
 
 |Docker||
 |:---|:---|
-|__Docker Pull__|`docker pull baikangwang/tensorflow_gpu:jupyter2`|
+|__Docker Pull__|`docker pull baikangwang/tensorflow_gpu:jupyter_py2`|
 |__Dockerfile__|<https://github.com/EverDockers/tensorflow_gpu/blob/jupyter2/Dockerfile>|
 
 ### Usage
 
 ```bash
-nvidia-docker run -it --name <container name> -v <local working dir>:/projects -p <host port>:8888 baikangwang/tensorflow_gpu:jupyter2 [/bin/bash]
+nvidia-docker run -it --name <container name> -v <local working dir>:/projects -p <host port>:8888 baikangwang/tensorflow_gpu:jupyter_py2 [/bin/bash]
 ```
 
 > NOTE: the default command is `/run_jupyter.sh --allow-root`, which will automatically launch jupyter notebook.
@@ -117,6 +117,6 @@ the container, `/run_jupyter.sh --allow-root`
 * cuda: 8.0.61
 * cudnn: 6.0.21
 * tensorflow: 1.3.0
-* python: 3.5
+* python: 2.7
 * jupyter
 
