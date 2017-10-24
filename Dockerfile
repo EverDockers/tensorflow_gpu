@@ -8,6 +8,8 @@ RUN apt update && \
     apt install -y --no-install-recommends build-essential cmake \
     # OpenBLAS
     libopenblas-dev \
+    # npm
+    npm \
     # Pillow and it's dependencies
     libjpeg-dev zlib1g-dev && \
     #
@@ -23,7 +25,7 @@ RUN apt update && \
 RUN pip --no-cache-dir install Pillow \
     # Common libraries
     numpy scipy sklearn scikit-image pandas matplotlib && \
-
+    # jupyter
     pip --no-cache-dir install jupyter && \
     #
     # Allow access from outside the container, and skip trying to open a browser.
@@ -40,11 +42,14 @@ RUN pip --no-cache-dir install Pillow \
     #
     # Prerequisites of the extension Code Prettifier
     yapf && \
+    # widgets
+    ipywidgets && \
     # install javascript and css files
     jupyter contrib nbextension install --user && \
     # enable code prettifier
-    jupyter nbextension enable code_prettify/code_prettify
-
+    jupyter nbextension enable code_prettify/code_prettify && \
+    # enable widgets
+    jupyter nbextension enable --py widgetsnbextension
 
 EXPOSE 8888
 
