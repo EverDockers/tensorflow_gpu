@@ -9,7 +9,7 @@ RUN apt update && \
     # OpenBLAS
     libopenblas-dev \
     # npm
-    mpn \
+    npm \
     # Pillow and it's dependencies
     libjpeg-dev zlib1g-dev && \
     #
