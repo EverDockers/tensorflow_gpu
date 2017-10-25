@@ -41,7 +41,7 @@ RUN pip --no-cache-dir install Pillow \
     pip --no-cache-dir install jupyter_contrib_nbextensions \
     #
     # Prerequisites of the extension Code Prettifier
-    yapf && \
+    yapf \
     # widgets
     ipywidgets && \
     # install javascript and css files
